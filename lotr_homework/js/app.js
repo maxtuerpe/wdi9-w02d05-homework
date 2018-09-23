@@ -1,6 +1,3 @@
-console.log("LOTR homework js file is connected");
-console.log("HINT: Click on the 'Elements' tab to see the elements that you are creating");
-console.log("---------------")
 // ==============================
 //       Dramatis Personae
 // ==============================
@@ -52,32 +49,18 @@ const makeMiddleEarth = () => {
 // Chapter 2
 // ============
 const makeHobbits = () => {
-
-  console.log('Make hobbits');
   $('#The-Shire').append(`<ul id='hobbits'></ul>`)
   for (let i = 0 ; i < hobbits.length; i++) {
     $('#hobbits').append(`<li class='hobbit'>${hobbits[i]}</li>`)
   }
-  // 1. display an unordered list of the hobbits in the shire.
-
-  // 2. give each hobbit a class of "hobbit"
-
-  // hint: create a 'ul' outside the loop upon which to append the 'li's
-
-  // hint: get 'The-Shire' by using its id
-
 };
-
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 2 complete - Made the Hobbits".
-
 // ============
 // Chapter 3
 // ============
 const keepItSecretKeepItSafe = () => {
-
+  $($('.hobbit').toArray()[0]).append('<div id="the-ring"></div>')
   // 1. create an empty div with an id of 'the-ring'
-
+  
   // 2. add the ring as a child of Frodo
 
   // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
