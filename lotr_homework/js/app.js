@@ -43,37 +43,21 @@ const lands = [
 const makeMiddleEarth = () => {
 
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
-
-  console.log("Trying to make middle earth.");
-
   $('body').append(`<section id='middle-earth'></section>`)
   for (let i = 0; i < lands.length; i++) {
-    $('#middle-earth').append(`<article id='${lands[i]}'> <h1>${lands[i]}</h1></article>`)
-    
+    $('#middle-earth').append(`<article id='${lands[i]}'> <h1>${lands[i]}</h1></article>`) 
   }
-
-  // 3. use a for loop to iterate over the lands array that does the following:
-
-  //   3a. creates an article tag (there should be one for each land when the loop is done)
-
-  //   3b. gives each land article an `id` tag of the corresponding land name
-
-  //   3c. includes an h1 with the name of the land inside each land article
-
-  //   3d. appends each land to the middle-earth section
-
 };
-
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 1 complete - Made Middle Earth".
-
 // ============
 // Chapter 2
 // ============
 const makeHobbits = () => {
 
   console.log('Make hobbits');
-
+  $('#The-Shire').append(`<ul id='hobbits'></ul>`)
+  for (let i = 0 ; i < hobbits.length; i++) {
+    $('#hobbits').append(`<li class='hobbit'>${hobbits[i]}</li>`)
+  }
   // 1. display an unordered list of the hobbits in the shire.
 
   // 2. give each hobbit a class of "hobbit"
