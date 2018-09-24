@@ -117,21 +117,15 @@ const hornOfGondor = () => {
 const itsDangerousToGoAlone = () => {
   $('#Mordor').append($($('.hobbit').toArray()[0]));
   $('#Mordor').append($($('.hobbit').toArray()[1]));
-  // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
   $('#Mordor').append('<div id="mount-doom"><h3>Mount Doom</h3></div>');
-  // 2. add a div with an id of 'mount-doom' to Mordor
-
 };
-
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 11 complete - Sam and Frodo are in Mordor and Mount Doom has been created"
-
 // ============
 // Chapter 12
 // ============
 const weWantsIt = () => {
-
-  // 1. Create a div with an id of 'gollum' and add it to Mordor
+  $('#Mordor').append('<div id="gollum">Gollum</div>')
+  $('#gollum').append($("#the-ring"));
+  $('#mount-doom').append($('#gollum'));
 
   // 2. Move the ring from Frodo and give it to Gollum
 
