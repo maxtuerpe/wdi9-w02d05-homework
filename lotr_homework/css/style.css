@@ -9,6 +9,9 @@ body {
 h1 {
   font-family: 'Condiment', cursive;
 }
+h3 {
+  font-family: 'Condiment', cursive;
+}
 
 button {
   display: inline;

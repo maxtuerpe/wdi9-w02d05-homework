@@ -110,24 +110,15 @@ const hornOfGondor = () => {
   alert('THE HORN OF GONDOR HAS BEEN BLOWN');
   $($('.buddy').toArray()[3]).css("text-decoration", "line-through");
   $('.baddy').remove(':contains("Uruk")')
-  // 1. create a pop-up alert that the horn of gondor has been blown
-
-  // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
-  // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-
 };
-
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 10 complete - horn of gandor blew and Boromir is dead"
-
 // ============
 // Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
-
+  $('#Mordor').append($($('.hobbit').toArray()[0]));
+  $('#Mordor').append($($('.hobbit').toArray()[1]));
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
-
+  $('#Mordor').append('<div id="mount-doom"><h3>Mount Doom</h3></div>');
   // 2. add a div with an id of 'mount-doom' to Mordor
 
 };
