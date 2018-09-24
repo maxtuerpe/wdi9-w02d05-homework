@@ -88,23 +88,16 @@ const leaveTheShire = () => {
 // Chapter 7
 // ============
 const beautifulStranger = () => {
-
-  // 1. change the buddy 'Strider' textnode to "Aragorn"
   $($('.buddy').toArray()[3]).text('Aragorn');
-  // hint: You can get a list of elements by tag name, such as 'aside'
-
 };
-
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
-
 // ============
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
 
   // 1. create a new div with an id 'the-fellowship'
-
+  $('#middle-earth').append(`<div id='the-fellowship'><h1>The Fellowship</h1></div>`);
+  $('#the-fellowship').append($('#hobbits'), $('#buddies'));
   // 2. add an h1 with the text 'The Fellowship' to this new div
 
   // 3. append the fellowship to middle-earth
