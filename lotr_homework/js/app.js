@@ -94,26 +94,14 @@ const beautifulStranger = () => {
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
-
-  // 1. create a new div with an id 'the-fellowship'
   $('#middle-earth').append(`<div id='the-fellowship'><h1>The Fellowship</h1></div>`);
   $('#the-fellowship').append($('#hobbits'), $('#buddies'));
-  // 2. add an h1 with the text 'The Fellowship' to this new div
-
-  // 3. append the fellowship to middle-earth
-
-  // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-
 };
-
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 8 complete - The Fellowship is created"
-
 // ============
 // Chapter 9
 // ============
 const theBalrog = () => {
-
+  $($('.buddy').toArray()[0]).replaceWith(`<li class='the-white'>Gandalf the White</li>`);
   // 1. change the 'Gandalf' textNode to 'Gandalf the White'
 
   // 2. add a class "the-white" to this element
