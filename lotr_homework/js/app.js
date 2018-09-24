@@ -82,23 +82,15 @@ const makeBuddies = () => {
 // Chapter 6
 // ============
 const leaveTheShire = () => {
-
-  // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
   $('#Rivendell').append($(`#hobbits`))
-  // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
-
 };
-
-// COMMIT YOUR WORK
-// The commit message should read: "Chapter 6 complete - Left the Shire"
-
 // ============
 // Chapter 7
 // ============
 const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
-
+  $($('.buddy').toArray()[3]).text('Aragorn');
   // hint: You can get a list of elements by tag name, such as 'aside'
 
 };
